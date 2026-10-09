@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Spectrum Analyzer: FFT, waterfall and RTL-SDR in your browser</title>
+    <meta name="description" content="Free spectrum analyzer and waterfall in your browser. Analyse the microphone, an audio file, a built-in signal generator or an RTL-SDR dongle over WebUSB. Selectable FFT size and window, peak hold, averaging, peak markers. No install, no upload." />
+    <meta name="keywords" content="spectrum analyzer, FFT, waterfall, RTL-SDR, WebUSB, SDR, audio spectrum, web audio, signal generator, real-time spectrum" />
+    <meta name="author" content="Volodymyr Kopytsia" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#f4f5f7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="canonical" href="https://hermes98761234.github.io/web-spectrum-analyzer/" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="Spectrum" />
+
+    <!-- Open Graph / Facebook / Telegram / Slack -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Web Spectrum Analyzer" />
+    <meta property="og:url" content="https://hermes98761234.github.io/web-spectrum-analyzer/" />
+    <meta property="og:title" content="Web Spectrum Analyzer: FFT, waterfall and RTL-SDR" />
+    <meta property="og:description" content="A real-time spectrum analyzer and waterfall for the microphone, audio files, a signal generator and RTL-SDR dongles. Runs entirely in your browser." />
+    <meta property="og:image" content="https://hermes98761234.github.io/web-spectrum-analyzer/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="A spectrum trace above a colourful waterfall, with the headline: spectrum analyzer in your browser." />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="uk_UA" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Web Spectrum Analyzer: FFT, waterfall and RTL-SDR" />
+    <meta name="twitter:description" content="Real-time spectrum and waterfall for audio and RTL-SDR. Runs in your browser." />
+    <meta name="twitter:image" content="https://hermes98761234.github.io/web-spectrum-analyzer/og-image.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Web Spectrum Analyzer",
+        "url": "https://hermes98761234.github.io/web-spectrum-analyzer/",
+        "description": "Real-time FFT spectrum analyzer and waterfall for the microphone, audio files, a signal generator and RTL-SDR dongles (WebUSB).",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript and Web Audio. RTL-SDR needs WebUSB (Chromium-based browsers).",
+        "inLanguage": ["en", "uk"],
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@type": "Person", "name": "Volodymyr Kopytsia" }
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>This spectrum analyzer needs JavaScript.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
